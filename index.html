@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 w-full h-screen overflow-hidden bg-[#EAE8E1]">
+
+    <!-- Main Hero Container -->
+    <main class="relative w-full h-full">
+        
+        <!-- Background Image -->
+        <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/306d97ec-a3dc-4888-a23e-e92f06a38fdb/hero-3-img-0-1769731873445.png" 
+             alt="Company Vision" 
+             class="absolute inset-0 w-full h-full object-cover z-0">
+
+        <!-- Navigation Bar -->
+        <header class="absolute top-0 left-0 w-full flex justify-between items-start px-6 py-6 md:px-12 md:py-10 z-10">
+            
+            <!-- Left: Navigation -->
+            <div class="flex-shrink-0">
+                <a href="#" class="text-[11px] md:text-[13px] tracking-[0.2em] text-[#44403c] uppercase font-medium hover:text-[#f43f5e] transition-colors">
+                    Workflows
+                </a>
+            </div>
+
+            <!-- Center: Name -->
+            <div class="absolute left-1/2 top-6 md:top-10 transform -translate-x-1/2 w-full text-center pointer-events-none hidden md:block">
+                <h1 class="text-[13px] tracking-[0.4em] text-[#44403c] uppercase font-normal ml-[0.4em]">
+                    Company
+                </h1>
+            </div>
+
+            <!-- Right: Menu -->
+            <div class="flex-shrink-0">
+                <button class="flex flex-col items-center justify-center gap-[6px] group cursor-pointer border-none bg-transparent p-0">
+                    <!-- Hamburger Line -->
+                    <span class="w-6 h-[1.5px] bg-[#f43f5e] group-hover:w-8 transition-all duration-300 ease-out"></span>
+                    <!-- Menu Text -->
+                    <span class="text-[9px] tracking-[0.25em] text-[#44403c] uppercase font-medium">
+                        Menu
+                    </span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Central Content Area -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10">
+            <h2 class="text-[28px] md:text-[52px] leading-tight tracking-[0.1em] text-[#44403c] uppercase font-light max-w-4xl mb-6">
+                Concepts to Production <br> <span class="text-[#f43f5e]">in One Click</span>
+            </h2>
+            <p class="text-[12px] md:text-[14px] tracking-[0.05em] text-[#44403c] max-w-lg mb-10 leading-relaxed uppercase opacity-80">
+                Transform design concepts into production-ready assets via generative models and automated workflows. Purpose-built for AI product teams.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6">
+                <a href="#" class="px-10 py-4 bg-[#f43f5e] text-white text-[11px] tracking-[0.2em] uppercase font-medium hover:bg-[#44403c] transition-colors duration-300">
+                    Get Started
+                </a>
+                <a href="#" class="px-10 py-4 border border-[#44403c] text-[#44403c] text-[11px] tracking-[0.2em] uppercase font-medium hover:bg-[#44403c] hover:text-white transition-colors duration-300">
+                    Book Demo
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Left: Figma Integration -->
+        <div class="absolute bottom-0 left-0 px-6 py-6 md:px-12 md:py-10 z-10">
+            <a href="#" class="text-[11px] md:text-[13px] tracking-[0.2em] text-[#44403c] uppercase font-medium hover:text-[#f43f5e] transition-colors">
+                Figma Integration
+            </a>
+        </div>
+
+        <!-- Bottom Right: Scale Label -->
+        <div class="absolute bottom-0 right-0 px-6 py-6 md:px-12 md:py-10 z-10 hidden md:block">
+            <span class="text-[11px] md:text-[13px] tracking-[0.2em] text-[#44403c] uppercase font-medium opacity-50">
+                Company &copy; 2024
+            </span>
+        </div>
+
+    </main>
+
+</body>
+</html>
